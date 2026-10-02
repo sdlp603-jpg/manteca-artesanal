@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manteca de cerdo artesanal. Presentaciones de 386 g y 650 g. Pedidos por WhatsApp en Ciudad de Panamá.">
+  <title>Manteca de Cerdo Artesanal</title>
+  <style>
+    :root{--green:#0d3828;--green2:#146b43;--cream:#f7f0e4;--gold:#e9c17a;--ink:#201a13}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--green);color:#fff;padding:16px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-family:Georgia,serif;font-size:1.15rem;font-weight:bold;letter-spacing:.04em}
+    .brand small{display:block;color:var(--gold);font: .7rem Arial,sans-serif;letter-spacing:.25em}
+    nav{display:flex;gap:20px;align-items:center}
+    nav a{text-decoration:none;font-size:.92rem}
+    .btn{display:inline-block;background:#168447;color:#fff;text-decoration:none;font-weight:bold;padding:13px 20px;border-radius:999px;border:1px solid #bfe4c8;transition:.2s}
+    .btn:hover{background:#0e6b38;transform:translateY(-1px)}
+    .hero{background:linear-gradient(110deg,rgba(9,28,19,.93),rgba(9,28,19,.72)),url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff;padding:78px 0 84px}
+    .hero-content{max-width:690px}
+    .eyebrow{color:var(--gold);font-weight:bold;text-transform:uppercase;letter-spacing:.14em;font-size:.82rem}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.12}
+    h1{font-size:clamp(2.6rem,6vw,5rem);margin:12px 0}
+    h1 em{display:block;color:var(--gold);font-weight:normal}
+    .hero p{font-size:1.08rem;max-width:560px;color:#f5eee4}
+    section{padding:66px 0}
+    .section-title{text-align:center;margin:0 auto 12px;font-size:clamp(2rem,4vw,3rem)}
+    .section-intro{text-align:center;margin:0 auto 34px;max-width:650px}
+    .products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:850px;margin:auto}
+    .product{background:#fffdf8;border:1px solid #e5d8c4;border-radius:20px;padding:28px;box-shadow:0 12px 35px #4c351410;display:flex;flex-direction:column}
+    .jar{width:100%;height:165px;display:grid;place-items:center;margin-bottom:10px}
+    .jar svg{height:160px;max-width:100%}
+    .product h3{font-size:1.6rem;margin:6px 0}
+    .weight{color:#6a5b48;margin:0}
+    .price{font-family:Georgia,serif;color:var(--green2);font-size:2.2rem;font-weight:bold;margin:10px 0}
+    .product ul{padding-left:20px;margin:4px 0 20px}
+    .product .btn{margin-top:auto;text-align:center}
+    .about{background:#173b2c;color:white}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+    .about h2{font-size:clamp(2rem,4vw,3rem);margin-top:0}
+    .about p{color:#f1e8d9}
+    .features{background:#fffaf1;color:var(--ink);border-radius:18px;padding:25px}
+    .features h3{margin-top:0}
+    .feature{display:flex;gap:12px;margin:17px 0}
+    .check{color:#17814b;font-size:1.3rem;font-weight:bold}
+    .uses-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .use{background:white;border-radius:14px;padding:22px 12px;text-align:center;border:1px solid #eadfce}
+    .use span{display:block;font-size:1.8rem;margin-bottom:8px}
+    .contact{background:#e9dfce;text-align:center}
+    .contact h2{font-size:clamp(2rem,4vw,3rem);margin-top:0}
+    .contact p{max-width:620px;margin:0 auto 22px}
+    footer{background:#071f16;color:#fff;padding:26px 0;text-align:center}
+    footer small{color:#d9c9aa}
+    .whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:5;box-shadow:0 6px 22px #0003}
+    @media(max-width:700px){
+      nav{display:none}
+      .hero{padding:58px 0}
+      .products,.about-grid{grid-template-columns:1fr}
+      .product{padding:22px}
+      .uses-grid{grid-template-columns:repeat(2,1fr)}
+      section{padding:48px 0}
+      .whatsapp-float{right:10px;bottom:10px;padding:11px 15px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">MANTECA DE CERDO <small>ARTESANAL</small></div>
+      <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn" href="https://wa.me/50766939274?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20manteca%20de%20cerdo." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-content">
+        <div class="eyebrow">Tradición y sabor en cada porción</div>
+        <h1>Manteca de Cerdo <em>Artesanal</em></h1>
+        <h2 style="color:#f4d79f;margin:0;font-size:1.5rem">Pura · Natural · De calidad</h2>
+        <p>El sabor de lo tradicional, directo a tu cocina. Una opción para cocinar, freír y dar sabor a tus recetas.</p>
+        <a class="btn" href="https://wa.me/50766939274?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20manteca%20de%20cerdo." target="_blank" rel="noopener">✆ Hacer un pedido</a>
+      </div>
+    </section>
+
+    <section id="productos">
+      <div class="wrap">
+        <h2 class="section-title">Nuestros productos</h2>
+        <p class="section-intro">Dos presentaciones en frascos de vidrio. Escoge la que mejor se adapte a tu cocina.</p>
+        <div class="products">
+          <article class="product">
+            <div class="jar" aria-hidden="true">
+              <svg viewBox="0 0 180 170" role="img"><defs><linearGradient id="glass1" x1="0" x2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset=".5" stop-color="#e6d2a8" stop-opacity=".65"/><stop offset="1" stop-color="#fff" stop-opacity=".95"/></linearGradient></defs><rect x="48" y="20" width="84" height="22" rx="5" fill="#b88b32"/><path d="M43 39 Q35 45 36 59 L42 142 Q44 155 57 157 L123 157 Q136 155 138 142 L144 59 Q145 45 137 39Z" fill="url(#glass1)" stroke="#bca77d" stroke-width="2"/><rect x="48" y="68" width="84" height="55" rx="4" fill="#f6edda" stroke="#4a3a25"/><text x="90" y="85" text-anchor="middle" font-size="7" fill="#1e261c">MANTECA DE CERDO</text><text x="90" y="98" text-anchor="middle" font-size="10" font-family="Georgia" fill="#1e261c">Artesanal</text><path d="M70 106h40" stroke="#b88b32"/><text x="90" y="116" text-anchor="middle" font-size="5" fill="#1e261c">PURA · NATURAL</text></svg>
+            </div>
+            <p class="weight">Presentación pequeña</p><h3>Frasco de 386 g</h3>
+            <div class="price">$8.00</div>
+            <ul><li>Envase de vidrio</li><li>Elaboración artesanal</li><li>Ideal para tu cocina diaria</li></ul>
+            <a class="btn" href="https://wa.me/50766939274?text=Hola%2C%20quiero%20pedir%20el%20frasco%20de%20manteca%20de%20386%20g%20por%20%248.00." target="_blank" rel="noopener">Pedir 386 g</a>
+          </article>
+          <article class="product">
+            <div class="jar" aria-hidden="true">
+              <svg viewBox="0 0 180 170" role="img"><defs><linearGradient id="glass2" x1="0" x2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset=".5" stop-color="#e6d2a8" stop-opacity=".65"/><stop offset="1" stop-color="#fff" stop-opacity=".95"/></linearGradient></defs><rect x="39" y="15" width="102" height="25" rx="5" fill="#b88b32"/><path d="M35 38 Q26 46 29 61 L36 142 Q38 157 54 159 L126 159 Q142 157 144 142 L151 61 Q154 46 145 38Z" fill="url(#glass2)" stroke="#bca77d" stroke-width="2"/><rect x="40" y="68" width="100" height="57" rx="4" fill="#f6edda" stroke="#4a3a25"/><text x="90" y="85" text-anchor="middle" font-size="7" fill="#1e261c">MANTECA DE CERDO</text><text x="90" y="99" text-anchor="middle" font-size="11" font-family="Georgia" fill="#1e261c">Artesanal</text><path d="M68 107h44" stroke="#b88b32"/><text x="90" y="117" text-anchor="middle" font-size="5" fill="#1e261c">PURA · NATURAL</text></svg>
+            </div>
+            <p class="weight">Presentación grande</p><h3>Frasco de 650 g</h3>
+            <div class="price">$16.00</div>
+            <ul><li>Envase de vidrio</li><li>Elaboración artesanal</li><li>Para quienes cocinan con frecuencia</li></ul>
+            <a class="btn" href="https://wa.me/50766939274?text=Hola%2C%20quiero%20pedir%20el%20frasco%20de%20manteca%20de%20650%20g%20por%20%2416.00." target="_blank" rel="noopener">Pedir 650 g</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="wrap about-grid">
+        <div>
+          <div class="eyebrow">Hecha con dedicación</div>
+          <h2>El sabor de siempre, para tu cocina</h2>
+          <p>Nuestra manteca de cerdo artesanal está pensada para quienes disfrutan cocinar con ingredientes tradicionales. Cada frasco se presenta en vidrio y está listo para acompañar tus recetas.</p>
+          <p><em>Tradición, sabor y cuidado en cada frasco.</em></p>
+        </div>
+        <div class="features">
+          <h3>¿Por qué elegir nuestra manteca?</h3>
+          <div class="feature"><span class="check">✓</span><div><strong>Elaboración artesanal</strong><br><small>Preparada con atención al proceso.</small></div></div>
+          <div class="feature"><span class="check">✓</span><div><strong>Frasco de vidrio</strong><br><small>Una presentación práctica para almacenar.</small></div></div>
+          <div class="feature"><span class="check">✓</span><div><strong>Dos tamaños disponibles</strong><br><small>386 g y 650 g.</small></div></div>
+          <div class="feature"><span class="check">✓</span><div><strong>Pedidos directos</strong><br><small>Consulta disponibilidad por WhatsApp.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Ideal para tus recetas</h2>
+        <p class="section-intro">Una opción versátil para distintas preparaciones de todos los días.</p>
+        <div class="uses-grid">
+          <div class="use"><span>🍳</span><strong>Freír y dorar</strong></div>
+          <div class="use"><span>🍲</span><strong>Guisos y sopas</strong></div>
+          <div class="use"><span>🥐</span><strong>Repostería</strong></div>
+          <div class="use"><span>🥘</span><strong>Salteados y más</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="wrap">
+        <h2>¿Listo para hacer tu pedido?</h2>
+        <p>Escríbenos por WhatsApp para consultar disponibilidad, coordinar tu pedido y preguntar por las entregas en Ciudad de Panamá y áreas cercanas.</p>
+        <p><strong>WhatsApp: 6693-9274</strong></p>
+        <a class="btn" href="https://wa.me/50766939274?text=Hola%2C%20quiero%20informaci%C3%B3n%20y%20hacer%20un%20pedido." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><strong>Manteca de Cerdo Artesanal</strong><br><small>Ciudad de Panamá, Panamá · Pedidos por WhatsApp: 6693-9274</small></div></footer>
+  <a class="btn whatsapp-float" href="https://wa.me/50766939274?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20manteca%20de%20cerdo." target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">WhatsApp</a>
+</body>
+</html>
