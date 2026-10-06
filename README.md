@@ -4,8 +4,8 @@ Página web para presentar y vender manteca de cerdo artesanal en envases de vid
 
 ## Productos
 
-- 386 gramos: $8.00
-- 650 gramos: $16.00
+- 386 gramos: $5.50
+- 650 gramos: $9.00
 
 ## Pedidos
 
